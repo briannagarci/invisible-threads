@@ -1,0 +1,316 @@
+/*Global Styles*/
+
+a {
+  text-decoration: none !important;
+  color: inherit;
+}
+
+a:hover {
+  color: #6c757d;
+}
+
+
+section {
+  padding: 50px 0;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.btn {
+  border: none;
+  color: #6c757d;
+}
+
+.btn-bg {
+  color: #ffffff;
+  background: #000000;
+}
+
+.btn-bg:hover {
+  color: #ffffff;
+  background: #4d4d4d;
+}
+
+.text-clipped {
+  padding: 1px;
+  background: #000000;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.section-heading h3{
+  font-size: 20px;
+  font-weight: normal;
+  margin: 0;
+}
+/*End Global Styles*/
+
+/*Header*/
+
+.custome-nav-container {
+  position: relative;
+  z-index: 1;
+}
+
+.custom-nav-container i {
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.main-nav-outer {
+  width: 250px;
+  height: 100vh;
+  background-color: #ffffff;
+  position: fixed;
+  top: 0;
+  right: -250px;
+  border-left: 5px solid #8d94a0;
+  z-index: 1500;
+}
+
+.main-nav-outer.open-menu {
+  right: 0;
+}
+
+.menu-close-icon {
+  position: absolute;
+  top: 5px;
+  left: 10px;
+}
+
+.main-nav .nav-link {
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.nav-icons-container {
+  width: 100%;
+  max-width: 125px;
+}
+
+.nav-icons-container i:hover{
+  opacity: .7;
+}
+
+.navbar-brand i {
+  font-size: 40px;
+}
+
+.navbar-brand i span {
+  font-size: 20px;
+  
+}
+
+.nav-icons > a {
+  position: relative;
+}
+
+.nav-icons > a > .badge {
+  position: absolute;
+  top: -10px;
+  right: -16px;
+  background-color: #000000;
+  color: #ffffff;
+  border-radius: 100%;
+}
+
+.nav-icons .dropdown-menu {
+  margin-top: 40px;
+  margin-left: -230px;
+  position: relative;
+  background-color: #ffffff;
+}
+
+.nav-icons .dropdown-menu::before {
+  content: '';
+  position: absolute;
+  top: -10px;
+  right: 40px;
+  width: 20px;
+  height: 20px;
+  background-color: inherit;
+  border: inherit;
+  transform: rotate(45deg);
+  border-bottom-color: transparent;
+  border-right-color: transparent;
+}
+
+.dropdown-toggle::after {
+  display: none;
+}
+
+
+.dropdwon-item {
+  color: #cecece;
+}
+
+.promotions {
+  background-color: #738C8C;
+  font-size: 14px;
+}
+
+.carousel {
+  z-index: 0;
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+  position: absolute;
+  top: 50%;
+  width: 30px;
+  height: 30px;
+  background-color: #ffffff;
+  opacity: 1;
+}
+
+.carousel-control-prev {
+  border-top-right-radius: 100%;
+  border-bottom-right-radius: 100%;
+}
+.carousel-control-next {
+  border-top-left-radius: 100%;
+  border-bottom-left-radius: 100%;
+}
+/*Desktops: 992px and UP*/
+@media(min-width: 992px) {
+  .main-nav-outer {
+    width: initial;
+    height: initial;
+    background-color: initial;
+    position: initial;
+    border: none;
+  }
+  .nav-icons .dropdown-menu {
+    margin-left: -260px;
+  }
+  .nav-icons .dropdown-menu::before{
+    right: 10px;
+  }
+}
+/*End Header*/
+
+/*Start clothing collection*/
+
+.row {
+  margin-left: 70px;
+}
+.hero-img {
+  padding: 15px;
+
+ 
+}
+
+@media (max-width: 1100px) {
+  .row {
+    margin: 10px;
+  
+  }
+}
+
+@media (max-width: 500px) {
+  .row {
+    margin: 11px;
+  
+  }
+}
+
+/*End clothing collection*/
+
+/* Start Our Services*/
+
+.our-services-icon {
+  width: 100px;
+  height: 100px;
+  background-color: #ffffff;
+  position: relative;
+  background-clip: padding-box;
+  border: 2px solid transparent;
+  border-radius: 100%;
+}
+
+.our-services-icon::before {
+  content:'';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  margin: -2px;
+  border-radius: inherit;
+  background: #000000;
+}
+
+.our-services-icon i {
+  font-size: 40px;
+}
+
+.our-services-description h5{
+  font-size: 16px;
+}
+.our-services-description p {
+  font-size: 14px;
+}
+
+/* End Our Services*/
+
+/*Start Footer*/
+footer {
+  color: #ffffff;
+  background-color: #000000;
+  font-family: 'Roboto', sans-serif;
+}
+
+.footer-title {
+  position: relative;
+  
+}
+
+.footer-title h5{
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.custom-border {
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color: #303030;
+
+}
+
+.custom-border::before {
+  content:'';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 50%;
+  height: 2px;
+}
+
+.footer-list li {
+  border-bottom: 1px solid #303030;
+  margin: 15px 0;
+  padding: 5px 0;
+}
+
+.footer-list li:last-child{
+  border: none;
+}
+
+.footer-link {
+  color: #ffffff !important;
+  transition: opacity 650ms;
+}
+
+.footer-link:hover {
+  opacity: .6;
+}
+
+.line {
+  border-top-color: #303030;
+}
+/*End Footer*/

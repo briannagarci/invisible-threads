@@ -1,0 +1,359 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Invisible Threads</title>
+    <link rel="shortcut icon" type="image/png" href="img/favicon/favicon.ico">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <script src="https://kit.fontawesome.com/2ea84e0338.js"></script>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <!--start header-->
+    <header>
+        <div class="custom-nav-container d-flex align-items-center justify-content-between px-5 py-3 shadow-sm">
+            <a class="text-clipped navbar-brand" href="#">
+             <img src="img/logo/nav-logo.jpg"  id="logo_nav" alt="invisible threads logo" width="180" height="18"/>
+            </a>
+        
+        <div class="main-nav-outer d-flex">
+                <i class="fa fa-times text-clipped menu-close-icon d-lg-none"></i>
+            <nav class="main-nav navbar navbar-light navbar-expand-lg text-center m-auto">
+                <ul class="navbar-nav d-flex">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Women</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Sale</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">New Arrivals</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Rewards</a>
+                        </li>
+                        <li class="nav-item">
+                                <a class="nav-link" href="#">Knit Together</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="nav-icons-container d-flex justify-content-between">
+                <div class="nav-icons">
+                    <a  href="">
+                        <i class="fas fa-search text-clipped"></i>
+                    </a>
+                </div>
+                <div class="nav-icons">
+                    <a href="">
+                        <i class="fas fa-shopping-bag bag-item-count text-clipped"></i>
+                        <span class="badge">2</span>
+                    </a>
+                </div>
+                <div class="nav-icons">
+                    <div class="dropdown">
+                        <a class="dropdown-toggle" href="" data-toggle="dropdown">
+                            <i class="far fa-user text-clipped"></i> 
+                        </a>
+                        <div class="dropdown-menu">
+                            <form action="" class="p-2 text-secondary">
+                                <div class="form-group">
+                                    <input type="email" class="form-control" placeholder="Enter email" required>
+                                </div>
+                                <div class="form-group">
+                                    <input type="password" class="form-control" placeholder="Enter password" required>
+                                </div>
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" id="dropdown-checkbox">
+                                    <label class="form-check-label" for="dropdown-checkbox">
+                                        Remember me
+                                    </label>
+                                </div>
+                                <button type="submit" class="btn btn-bg my-2">
+                                    Login
+                                </button>
+                            </form>
+                            <div class="dropdown-divider mt-0"></div>
+                            <a class="dropdown-item" href="#">Don't have an account? Sign Up</a>
+                            <a class="dropdown-item" href="#">Forgot your password? Click Here</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="nav-icons d-lg-none">
+                    <i class="fas fa-bars open-menu-icon text-clipped"></i>    
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--end header-->
+
+    <!--start promotions-->
+    <div class="promotions text-white text-center py-2 mb-5">
+        <span>
+            <span class="text-uppercase">Free shipping</span> on orders of $100 or more!
+        </span>
+    </div>
+
+    <!--end promotions-->
+
+    <!--start carousel-->
+    <div class="container"> 
+        <div class="carousel slide" id="carousel-indicators" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li class="active" data-target="#carousel-indicators" data-slide-to="0"></li>
+                <li data-target="#carousel-indicators" data-slide-to="1"></li>
+                <li data-target="#carousel-indicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <a href="#">
+                        <img class="img-fluid d-md-none" src="img/carousel/carousel-img-1-mobile.jpg">
+                        <img class="img-fluid d-none d-md-block" src="img/carousel/carousel-img-1.jpg">
+                    </a>
+                </div>
+            
+                <div class="carousel-item">
+                     <a href="#">
+                         <img class="img-fluid d-md-none" src="img/carousel/carousel-img-2-mobile.jpg" alt=" fair trade clothing">
+                         <img class="img-fluid d-none d-md-block" src="img/carousel/carousel-img-2.jpg" alt="fair trade clothing">
+                    </a>
+                </div>
+            
+                <div class="carousel-item">
+                     <a href="#">
+                          <img class="img-fluid d-md-none" src="img/carousel/carousel-img-3-mobile.jpg">
+                         <img class="img-fluid d-none d-md-block" src="img/carousel/carousel-img-3.jpg" alt="fair trade clothing">
+                    </a>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carousel-indicators" role="button" data-slide="prev">
+                <i class="fas fa-chevron-left text-clipped"></i>
+            </a>
+            <a class="carousel-control-next" href="#carousel-indicators" role="button" data-slide="next">
+                <i class="fas fa-chevron-right text-clipped"></i>
+            </a>
+        </div>
+    </div>
+<!--end carousel-->
+
+<!-- Start Clothing items-->
+
+<section class="clothing-collection ">
+    <div class="container">
+        <div class="section-heading text-center mb-5">
+            <h3 class="text-clipped text-uppercase">Fair Trade and Organic Clothing</h3>
+            <p class="text-secondary">Shop the newest trends</p>
+        </div>
+        <div class="row">
+            <div class="col-12 col-md-6 mb-4 hero-img">
+                <a href="#"> 
+                    <img class="img-fluid" src="img/items/top.jpg" height="600px" width="400px">
+                </a>
+                <div class="mt-2">
+                        <a href="#">
+                            <span class="text-uppercase font-weight-bold">Tops</span> <br>
+                            <span>Shop organic chic shirts + tees</span> <i class="fas fa-caret-right"></i>
+                        </a>
+                </div>
+            </div>
+            <div class="col-12 col-md-6  mb-4 hero-img">
+                <a href="#"> 
+                    <img class="img-fluid" src="img/items/dress.jpg" height="600px" width="400px">
+                </a>
+                <div class="mt-2">
+                    <a href="#">
+                        <span class="text-uppercase font-weight-bold">Dresses</span> <br>
+                        <span>Pure cotton dresses</span> <i class="fas fa-caret-right"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="col-12 col-md-6  mb-4 hero-img">
+                <a href="#"> 
+                    <img class="img-fluid" src="img/items/jeans.jpg" height="600px" width="400px">
+                </a>
+                <div class="mt-2">
+                    <a href="#">
+                    <span class="text-uppercase font-weight-bold">Jeans</span> <br>
+                    <span>100% organic cotton denim fabric</span> <i class="fas fa-caret-right"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 mb-4 hero-img">
+                    <a href="#"> 
+                        <img class="img-fluid" src="img/items/pants.jpg" height="600px" width="400px">
+                    </a>
+                <div class="mt-2">
+                    <a href="#">
+                        <span class="text-uppercase font-weight-bold">Pants</span> <br>
+                        <span>Shop our pima cotton pants</span> <i class="fas fa-caret-right"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 mb-4  hero-img">
+                    <a href="#"> 
+                        <img class="img-fluid" src="img/items/purse.jpg" height="600px" width="400px">
+                    </a>
+                <div class="mt-2">
+                    <a href="#">
+                        <span class="text-uppercase font-weight-bold">Handbags</span> <br>
+                        <span>organic cotton handbags</span> <i class="fas fa-caret-right"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 mb-4  hero-img">
+                    <a href="#"> 
+                        <img class="img-fluid" src="img/items/shorts.jpg" height="600px" width="400px">
+                    </a>
+                <div class="mt-2">
+                    <a href="#">
+                        <span class="text-uppercase font-weight-bold">Shorts</span> <br>
+                        <span>organic pima cotton shorts</span> <i class="fas fa-caret-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--End Clothing items-->
+
+
+<!--Start serivces-->
+<section class="services">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-12 col-md-6 col-md-3 mb-5">
+                    <div class="our-services-icon d-flex mb-3 mx-auto">
+                        <i class="fas fa-leaf text-clipped m-auto"></i>
+                    </div>
+                    <div class="our-services-description">
+                        <h5 class="text-uppercase">Natural Simplicity</h5>
+                        <p>All clothing is made with 100% cotton.</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-md-3 mb-5">
+                    <div class="our-services-icon d-flex mb-3 mx-auto">
+                        <i class="fas fa-heart text-clipped m-auto"></i>
+                    </div>
+                    <div class="our-services-description">
+                        <h5 class="text-uppercase">Fashion with Care</h5>
+                        <p>Made fair trade, with attention to detail.</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-md-3 mb-5">
+                    <div class="our-services-icon d-flex mb-3 mx-auto">
+                        <i class="fas fa-spa text-clipped m-auto"></i>
+                    </div>
+                    <div class="our-services-description">
+                        <h5 class="text-uppercase">Ethical and Fair Trade</h5>
+                        <p>Made with organic and natural fibers.</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-md-3 mb-5">
+                    <div class="our-services-icon d-flex mb-3 mx-auto">
+                        <i class="fas fa-users text-clipped m-auto"></i>
+                    </div>
+                    <div class="our-services-description">
+                        <h5 class="text-uppercase">Community</h5>
+                        <p>We strive to empower women through organic fabrics.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+</section>
+
+<!--End serivces-->
+
+<!--Start footer-->
+
+    <footer class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-6">
+                    <address>
+                        <strong class="h3 font-weight-normal"> Invisible Threads</strong><br>
+                        19021 Beach Blvd <br>
+                        Huntington Beach, CA 92648
+                        Phone: (415) 867-1993
+                    </address>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="footer-title">
+                        <h5>Our Mission</h5>
+                        <span class="custom-border"></span>
+                    </div>
+                    <ul class="footer-list">
+                        <li>
+                            <a class="footer-link" href="#">Community</a>
+                        </li>
+                        <li>
+                            <a class="footer-link" href="#">Our Story</a>
+                        </li>
+                        <li>
+                            <a class="footer-link" href="#">Fabrics</a>
+                        </li>
+                        <li>
+                            <a class="footer-link" href="#">Knit Together</a>
+                        </li>
+                        <li>
+                            <a class="footer-link" href="#">Wholesale</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="footer-title">
+                        <h5>Customer Service</h5>
+                        <span class="custom-border"></span>
+                    </div>
+                     <ul class="footer-list">
+                        <li>
+                            <a class="footer-link" href="#">Terms of Use</a>
+                        </li>
+                        <li>
+                            <a class="footer-link" href="#">Return Policy</a>
+                        </li>
+                        <li>
+                            <a class="footer-link" href="#">Shipping</a>
+                        </li>
+                        <li>
+                            <a class="footer-link" href="#">Sizing Chart</a>
+                        </li>
+                        <li>
+                            <a class="footer-link" href="#">Visit Our Store</a>
+                        </li>
+                    </ul>
+                </div>
+
+
+                <hr class=" line mt-5">
+                <div class="w-100 d-md-flex justify-content-between align-items-center text-center">
+                    <div class="order-2 ">
+                        
+                    </div>
+                    <div>
+                        <p class="m-0 text-sm order-1">
+                            &copy; 2019 Invisible Threads. All rights reserved.
+                        </p>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </footer>
+<!--End footer-->
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="main.js"></script>
+</body>
+</html>
